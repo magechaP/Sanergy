@@ -24,7 +24,7 @@
 
                     <div class="text-center">
                         <h3>Create your profile</h3>
-                        <form action="{% url 'update-profile' %}" method="post" enctype="multipart/form-data">
+                        <form action="{% url 'update_profile' %}" method="post" enctype="multipart/form-data">
 
                             {% csrf_token%}
                             {% bootstrap_form form %}
