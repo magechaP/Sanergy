@@ -64,15 +64,6 @@ def update_profile(request):
 
     return render(request,'profile/update_profile.html',{"form":form})
 
-# def login(request):
-#     if request.method=='POST':
-#         form = UserCreationForm(request.POST)
-
-#         if form.is_valid():
-#             form.save()
-#         return render('login')
-
-
 
 def payment(request):
     if request.method == 'POST':
