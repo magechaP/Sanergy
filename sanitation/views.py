@@ -57,8 +57,8 @@ def update_profile(request):
         return redirect('index')
 
     elif Profile.objects.get(username=current_user):
-        profile = Profile.objects.get(username=current_user)
-        form = ProfileForm(instance=profile)
+         profile = Profile.objects.get(username=current_user)
+         form = ProfileForm(instance=profile)
     else:
         form = ProfileForm()
 

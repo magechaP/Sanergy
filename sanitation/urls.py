@@ -11,8 +11,6 @@ urlpatterns = [
     url(r'^toilet', views.toilet, name='toilet'),
     url('access/token', views.getAccessToken, name='get_mpesa_access_token'),
     url('online/lipa', views.lipa_na_mpesa_online, name='lipa_na_mpesa'),
-    # url(r'^signup/$', views.signup, name ='signup'),
-
     #profile
     url(r'^my-profile/',views.my_profile, name='my-profile'),
     url(r'^user/(?P<username>\w{0,50})',views.user_profile,name='user-profile'),
