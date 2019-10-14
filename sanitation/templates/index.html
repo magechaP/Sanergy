@@ -90,11 +90,11 @@ nav a:hover::before {
       <nav>
         <ul>
           <li><a href="{% url 'homePage' %}">Home</a></li>
-          <a class="nav-link" href="/accounts/login">Sign In</a>
-          <a class="nav-link" href="{% url 'my-profile'%}">Profile</a>
-          <a class="nav-link" href="{% url 'update-profile' %}">Edit Profile</a>
+          <li><a class="nav-link" href="/accounts/register">Sign In</a></li>
+          <a class="nav-link" href="{% url 'user-profile' %}">Account</a>
+          <!-- <a class="nav-link" href="{% url 'update-profile' %}">Edit Profile</a> -->
 
-          <li><a href="#">Staff Login</a></li>
+          <li><a href="/account/login">Staff Login</a></li>
           
         </ul>
       </nav>

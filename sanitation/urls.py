@@ -6,7 +6,7 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^$',views.index, name="homePage"),
+    url(r'^$',views.index, name=  "homePage"),
     url(r'^payment', views.payment, name='payment'),
     url(r'^toilet', views.toilet, name='toilet'),
     url('access/token', views.getAccessToken, name='get_mpesa_access_token'),

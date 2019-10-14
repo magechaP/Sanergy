@@ -22,11 +22,15 @@ def my_profile(request):
     profile =Profile.objects.get(username=current_user)
     return render(request,'profile/user_profile.html',{"profile":profile})
 
+# def redirection(request):
+#     if user.is_valid() == True:
+#         return render(request,'payment.html')    
 
-@login_required(login_url='/accounts/login/')
-def user_profile(request,username):
-    user = User.objects.get(username=username)
-    profile =Profile.objects.get(username=user)
+
+# @login_required(login_url='/accounts/login/')
+# def user_profile(request,username):
+#     user = User.objects.get(username=username)
+#     profile =Profile.objects.get(username=user)
 
 @login_required(login_url='/accounts/login/')
 def create_profile(request):
